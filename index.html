@@ -5,12 +5,32 @@
 <head>
 
  <title>Home | McMonkeyo</title>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<a href="mgf.members.html">Mega Gamer Friends</a>
+<nav>
+    <div class="logo">McMonkeyo</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="MGF_Members.html">MGF</a></li>
+      <li><a href="#">Gaming</a></li>
+      <li><a href="#">Programming</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </nav>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  <h1 class="main_text">Welcome to my site where we McMonkey around, all day!</h1>
+<img src="./images/dancing_monkey.gif" alt="Girl in a jacket" width="500" height="600">
 
 </body>
 
